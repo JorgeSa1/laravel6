@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Logar-se</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,20 +81,22 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Login!
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://larasembugs.test:8080/">Home</a>
+                    <a href="http://larasembugs.test:8080/sobre">Sobre</a>
+                    <a href="http://larasembugs.test:8080/roteiros">Roteiros</a>
+                    <a href="http://larasembugs.test:8080/pacotes">Pacotes</a>
+                    <a href="http://larasembugs.test:8080/proximas">Próximas</a>
+                    <a href="http://larasembugs.test:8080/ultimas">Últimas</a>
+                    <a href="http://larasembugs.test:8080/contato">Contato</a>
+                    <a href="http://larasembugs.test:8080/registro">Registre-se</a>                    
+                    <a href="http://larasembugs.test:8080/online">On line</a>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
