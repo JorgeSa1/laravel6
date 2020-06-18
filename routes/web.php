@@ -3,47 +3,39 @@
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Runner\AfterTestHook;
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
 
-// Rotas Públicas
 
-Route::get('/', function () {
-    return view('site.home');
-});
+Route::get('/', 'HomeController@index')->name('site.home');
 
-Route::get('/sobre', function () {
-    return view('site.sobre');
-});
 
-Route::get('/pacotes', function () {
-    return view('site.pacotes');
-});
+Route::delete('roteiros/{id}', 'RoteiroController@destroy')->name('roteiros.destroy');
+Route::put('roteiros/{id}', 'RoteiroController@update')->name('roteiros.update');
+Route::get('roteiros/{id}/edit', 'RoteiroController@edit')->name('roteiros.edit');
+Route::get('roteiros/create', 'RoteiroController@create')->name('roteiros.create');
+Route::get('roteiros/{id}', 'RoteiroController@show')->name('roteiros.show');
+Route::get('/roteiros', 'RoteiroController@index')->name('roteiros.index');
+Route::post('roteiros', 'RoteiroController@store')->name('roteiros.store');
 
-Route::get('/roteiros', function () {
-    return view('site.roteiros');
-});
 
-Route::get('/ultimas', function () {
-    return view('site.ultimas');
-});
 
-Route::get('/proximas', function () {
-    return view('site.proximas');
-});
+
+Route::get('/pacotes', 'PacoteController@index')->name('site.pacotes');
+
+Route::get('/proximas', 'ProximaViagemController@index')->name('site.proximas');
+
+Route::get('/ultimas', 'UltimaViagemController@index')->name('site.ultimas');
+
+Route::get('/sobre', 'SobreController@index')->name('site.sobre');
+
+
+
 
 Route::get('/contato', function () {
-    return view('site.contato');
+    return view('site.pages.contato.index');
 });
 
 Route::get('/registro', function () {
     return view('site.registro');
-});
-
-
-Route::get('/online', function () {
-    return view('site.online');
 });
 
 Route::get('/painel', function () {
