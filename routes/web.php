@@ -46,6 +46,10 @@ Route::get('/online', function () {
     return view('site.online');
 });
 
+Route::get('/painel', function () {
+    return view('admin.dashboard');
+});
+
 
 
 
